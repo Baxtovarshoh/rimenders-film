@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Film Game</title>
+    <link rel="stylesheet" href="ccs/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body class="v">
+    <div class="phone">
+      <div class="notch"></div>
+      <div class="screen">
+        <div class="vid hidden">
+          <span onclick="closeVideo()" class="close"><i class="bi bi-x"></i></span>
+          <video src="assets/30_Redemption_UPRH263011XH (1).mp4" controls preload="metadata"></video>
+        </div>
+        <div class="startTablo ">
+          <div class="eew">
+            <div class="verx">
+              <p>
+                From the best-selling author of <br />
+                <span>regretting you</span>
+              </p>
+            </div>
+            <div class="cta1">
+              <div class="hed">
+                <div>
+                  <p>Only in theaters march 13</p>
+                </div>
+                <span class="tic"></span>
+              </div>
+              <div class="nar">
+                Match as many characters as possible before the time runs out
+              </div>
+              <div class="era"><button onclick="timerFunct()" class="star">Play now</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="gameTablo hidden">
+          <p>ONLY IN THEATERS NOW</p>
+          <div class="cont">
+            <div class="sect">
+              <div class="grid-cont"></div>
+            </div>
+            <div class="eweq">
+              <div class="ser">
+                <div class="timer">
+                  <i class="bi bi-clock-fill"></i> <span class="clock"></span>
+                </div>
+                <span class="tir"></span>
+                <div class="conts">
+                  <img src="assets/star_12080813.png" alt="" />
+                  <span class="score">2</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="finishTablo hidden">
+          <div class="eew">
+            <div class="verx">
+              <p>
+                From the best-selling author of <br />
+                <span>regretting you</span>
+              </p>
+            </div>
+            <div class="cta1 er">
+              <div class="hed">
+                <div>
+                  <p>Only in theaters march 13</p>
+                </div>
+              </div>
+              <div class="era s">
+                <button onclick="playAgain()" class="star">Play again</button>
+                <button onclick="startVideo()" class="voch">Watch Trailer</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swipe"></div>
+    </div>
+  </body>
+</html>

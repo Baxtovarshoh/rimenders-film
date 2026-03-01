@@ -1,0 +1,341 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Trade Gothic Bold";
+  src: url("../assets/fonts/Trade_Gothic/Trade-Gothic-Bold.otf");
+}
+@font-face {
+  font-family: "Trade Gothic Light";
+  src: url("../assets/fonts/Trade_Gothic/TradeGothic-Light.otf");
+}
+@font-face {
+  font-family: "Trade Gothic reg";
+  src: url("../assets/fonts/Trade_Gothic/Trade-Gothic.woff2");
+}
+.v {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
+  background-color: #222;
+}
+.phone {
+  width: 340px;
+  height: 667px;
+  border-radius: 50px;
+  border: 8px solid black;
+  background: white;
+  overflow: hidden;
+  position: fixed;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.notch {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  z-index: 1;
+  transform: translateX(-50%);
+  width: 135px;
+  height: 30px;
+  background: black;
+  border-radius: 15px;
+}
+.startTablo {
+  width: 100%;
+  height: 100%;
+  font-family: "Trade Gothic reg";
+  display: flex;
+  padding-top: 50px;
+  text-transform: uppercase;
+  background: url("../assets/bg124.png") center/cover no-repeat;
+}
+.eew {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.verx {
+  width: 100%;
+  font-weight: 700;
+  text-align: center;
+  font-size: 14px;
+}
+.verx > p > span {
+  font-size: 15px;
+  font-family: "Trade Gothic Bold";
+}
+.cta1 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hed {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hed > span {
+  width: 50px;
+  display: flex;
+  height: 2px;
+  margin-top: 15px;
+  background: white;
+}
+
+.nar {
+  padding: 0 20px;
+  padding-top: 15px;
+  font-family: "Trade Gothic Bold";
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+.era {
+  width: 100%;
+  display: flex;
+  padding-top: 15px;
+  justify-content: center;
+}
+.star,
+.voch {
+  width: 50%;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgb(247, 172, 15);
+  font-family: "Trade Gothic Bold";
+  font-weight: 900;
+  font-size: 18px;
+  &:active {
+    transform: translateY(1px);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.gameTablo {
+  width: 100%;
+  height: 100%;
+  font-family: "Trade Gothic Bold";
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  text-align: center;
+  background: url("../assets/bg123.png") center/cover no-repeat;
+}
+.gameTablo > p {
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  color: black;
+  letter-spacing: 3px;
+}
+.cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.sect {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 20px;
+}
+.card:last-child {
+  grid-column: 2;
+}
+.eweq {
+  width: 100%;
+  height: 11%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid-cont {
+  width: 80%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.card.flip .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+}
+.card-back > img {
+  width: 100%;
+  height: 100%;
+}
+.card-front > img {
+  width: 100%;
+  height: 100%;
+}
+.card.e {
+  grid-column: 2;
+}
+.ser {
+  width: 40%;
+  height: 60%;
+  border: 2px solid white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.timer,
+.conts {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.timer > i {
+  font-size: 21px;
+}
+.conts > img {
+  width: 40%;
+}
+.tir {
+  width: 2px;
+  height: 70%;
+  display: flex;
+  background: white;
+}
+.finishTablo {
+  width: 100%;
+  height: 100%;
+  font-family: "Trade Gothic reg";
+  display: flex;
+  padding-top: 50px;
+  text-transform: uppercase;
+  background: url("../assets/bg124.png") center/cover no-repeat;
+}
+.era.s {
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.cta1.er {
+  gap: 30px;
+}
+.vid{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: black;
+  position: relative;
+  justify-content: center;
+}
+.vid > video {
+  width: 100%;
+  transform: scale(1);
+  height: 100%;
+  color: #fff;
+}
+.close{
+  position: absolute;
+  top: 40px;
+  z-index: 1;
+  font-size: 30px;
+  right: 10px;
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width: 360px) {
+  .phone{
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+  }
+  .screen{
+    border-radius: 0;
+
+  }
+  .notch{
+    display: none;
+  }
+  .hidden{
+    display: none;
+  }
+  .swipe{
+    display: none;
+  }
+  .startTablo{
+    padding-top: 30px;
+  }
+  .gameTablo{
+    padding-top: 30px;
+  }
+  .finishTablo{
+    padding-top: 30px;
+  }
+}
