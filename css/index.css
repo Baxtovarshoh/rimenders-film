@@ -146,6 +146,7 @@
 
 .gameTablo {
   width: 100%;
+  position: relative;
   height: 100%;
   font-family: "Trade Gothic Bold";
   display: flex;
@@ -154,7 +155,7 @@
   text-align: center;
   background: url("../assets/bg123.png") center/cover no-repeat;
 }
-.gameTablo > p {
+.ret {
   width: 100%;
   text-align: center;
   font-size: 23px;
@@ -284,7 +285,7 @@
 .cta1.er {
   gap: 30px;
 }
-.vid{
+.vid {
   width: 100%;
   height: 100%;
   display: flex;
@@ -298,44 +299,167 @@
   height: 100%;
   color: #fff;
 }
-.close{
+.close {
   position: absolute;
   top: 40px;
   z-index: 1;
   font-size: 30px;
   right: 10px;
 }
+.r4 {
+  width: 50%;
+  position: absolute;
+  right: -10%;
+  transform: scale(0.8);
+  color: black;
+  top: 10%;
+  font-family: "Trade Gothic reg";
+  text-transform: uppercase;
+}
+.r4 > span {
+  font-family: "Trade Gothic Bold";
+}
+.r4{
+  display: none;
+}
 .hidden {
   display: none;
 }
 
-@media (max-width: 360px) {
-  .phone{
+@media (max-width: 400px) {
+  .phone {
     width: 100%;
     height: 100%;
     border-radius: 0;
     border: 0;
   }
-  .screen{
+  .screen {
     border-radius: 0;
+  }
+  .notch {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+  .swipe {
+    display: none;
+  }
+  .startTablo {
+    padding-top: 30px;
+  }
+  .gameTablo {
+    padding-top: 30px;
+  }
+  .finishTablo {
+    padding-top: 30px;
+  }
+}
+
+@media (max-height: 400px) {
+  .phone {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 0;
+  }
+  .r4{
+    display: block;
+  }
+  .screen {
+    border-radius: 0;
+  }
+  .notch {
+    display: none;
+  }
+  .hidden {
+    display: none;
+  }
+  .swipe {
+    display: none;
+  }
+  .startTablo {
+    padding: 0;
+    background: url("../assets/hor1.png") center/cover no-repeat;
+  }
+  .card:last-child {
+    grid-column: 5;
+  }
+  .eew {
+    align-items: center;
+    padding: 30px 0;
+  }
+  .cta1 {
+    width: 50%;
+  }
+  .sect {
+    width: 80%;
+    height: 80%;
+    padding: 0;
 
   }
-  .notch{
-    display: none;
+  .grid-cont {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
-  .hidden{
-    display: none;
+  .gameTablo {
+    padding-top: 20px;
+    background: url("../assets/hor2.png") center/cover no-repeat;
+    justify-content: center;
   }
-  .swipe{
-    display: none;
+  .eweq {
+    width: 50%;
+    height: 14%;
+    justify-content: end;
   }
-  .startTablo{
-    padding-top: 30px;
+  .ser {
+    height: 100%;
   }
-  .gameTablo{
-    padding-top: 30px;
+  .cont {
+    height: 80%;
+    gap: 10%;
   }
-  .finishTablo{
-    padding-top: 30px;
+  .conts{
+    gap: 10px;
+  }
+  .conts > img{
+    width: 30%;
+  }
+  .ret {
+    position: absolute;
+    width: 40%;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: white;
+    right: -5%;
+    bottom: 21%;
+  }
+  .finishTablo {
+    padding-top: 20px;
+    background: url("../assets/hor1.png") center/cover no-repeat;
+  }
+  .era.s {
+    width: 100%;
+    flex-direction: row;
+  }
+  .finishTablo > .eew{
+    justify-content: end;
+  }
+
+  .verx.t{
+    width: 50%;
+    position: absolute;
+    top: 12%;
+    left: -7%;
+    color: rgb(238,223,171);
+  }
+  .er > .hed{
+    position: absolute;
+    bottom: 40%;
+    right: -5%;
+    width: 50%;
+  }
+  .verx.t > p > span{
+    color: white;
   }
 }
